@@ -20,7 +20,8 @@ end
 
 class LinkedList
   include Enumerable
-
+  attr_accessor :tail, :head
+  
   def initialize
     @head = Link.new
     @tail = Link.new
